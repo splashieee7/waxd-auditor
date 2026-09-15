@@ -1,0 +1,21 @@
+<resources>
+    <style name="AuditorTheme" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- required for going edge-to-edge -->
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowLayoutInDisplayCutoutMode">shortEdges</item>
+
+        <item name="colorPrimary">@color/graphenePrimaryColor</item>
+        <item name="colorOnPrimary">@color/grapheneOnPrimaryColor</item>
+        <item name="colorSurface">@color/grapheneSurfaceColor</item>
+        <item name="colorSurfaceContainer">@color/grapheneSurfaceContainerColor</item>
+
+        <item name="popupMenuStyle">@style/GraphenePopup</item>
+
+        <item name="background">@null</item>
+    </style>
+
+    <style name="GraphenePopup" parent="Widget.Material3.PopupMenu">
+        <item name="popupMenuBackground">@drawable/popupmenu_background</item>
+    </style>
+</resources>

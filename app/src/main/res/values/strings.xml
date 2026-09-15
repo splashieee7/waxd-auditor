@@ -1,0 +1,143 @@
+<resources>
+    <string name="app_name">Waxd Auditor</string>
+    <string name="introduction">Two devices with Android 12 or higher are needed to perform verification:\n\n- The device to be verified (Auditee), which needs to be one of the supported devices.\n\n- An Android device to perform the verification (Auditor).\n\nThe verification process requires sending data between the devices by scanning QR codes.</string>
+    <string name="unsupported_auditee">Device is not one of the supported models.</string>
+    <string name="camera_permission_denied">Camera permission is required to scan QR codes.</string>
+    <string name="auditee_button">Auditee (device being verified)</string>
+    <string name="auditor_button">Auditor (device performing verification)</string>
+    <string name="qrcode_content_description">QR code</string>
+    <string name="generate_error"><b>Error encountered generating attestation:\n\n</b></string>
+    <string name="verify_error"><b>Error encountered verifying attestation:\n\n</b></string>
+    <string name="qr_code_scan_hint_auditee">Now scan this QR Code from the other device.</string>
+    <string name="qr_code_scan_hint_auditee_pairing">Now scan this QR Code from the other device.\n\nThis is the initial pairing and needs to be completed or pairings will need to be cleared on either side to try again.</string>
+    <string name="qr_code_scan_hint_auditor">Now scan this QR Code from the other device.\n\nTap this QR code after scanning to proceed.</string>
+    <string name="scanned_invalid_account_qr_code">Scanned invalid account QR code</string>
+
+    <string name="bind_failure">Failed to open camera due to an OS or hardware issue. Try rebooting.</string>
+    <string name="camera_provider_init_failure">Failed to load camera provider due to OS or hardware issue. Try rebooting.</string>
+
+    <string name="action_clear_auditee">Clear Auditee pairings</string>
+    <string name="action_clear_auditor">Clear Auditor pairings</string>
+    <string name="action_enable_remote_verify">Enable remote verification</string>
+    <string name="action_disable_remote_verify">Disable remote verification</string>
+    <string name="action_submit_sample">Submit sample data</string>
+    <string name="action_help">Help</string>
+
+    <string name="enable_remote_verify_success">Scheduled regular remote verification</string>
+    <string name="disable_remote_verify_success">Disabled remote verification</string>
+    <string name="schedule_submit_sample_success">Scheduled submitting sample data</string>
+    <string name="clear_auditee_pairings_success">Cleared Auditee pairings</string>
+    <string name="clear_auditee_pairings_failure">Failed to fully clear Auditee pairings</string>
+    <string name="clear_auditor_pairings_success">Cleared Auditor pairings</string>
+
+    <string name="cancel">Cancel</string>
+    <string name="clear">Clear</string>
+    <string name="disable">Disable</string>
+
+    <string name="remote_verification_notification_success_channel">Remote verification success</string>
+    <string name="remote_verification_notification_success_title">Remote verification success</string>
+    <string name="remote_verification_notification_success_content">Successfully submitted remote attestation.</string>
+
+    <string name="remote_verification_notification_failure_channel">Remote verification failure</string>
+    <string name="remote_verification_notification_failure_title">Remote verification failure</string>
+    <string name="remote_verification_notification_failure_content">Failed to submit remote attestation.</string>
+
+    <string name="sample_submission_notification_channel">Sample submission</string>
+    <string name="sample_submission_notification_title">Submitted sample data</string>
+    <string name="sample_submission_notification_content">Successfully submitted sample data.</string>
+    <string name="sample_submission_notification_title_failure">Failed submitting sample data</string>
+    <string name="sample_submission_notification_content_failure">Failed to submit sample data.</string>
+
+    <string name="scanner_label">Scan QR code shown on the other device.</string>
+    <string name="verifying_attestation">Verifying attestation…</string>
+    <string name="generating_attestation">Generating attestation…</string>
+    <string name="verify_strong"><b>Successfully performed strong paired verification and identity confirmation.</b>\n\n</string>
+    <string name="verify_basic"><b>Successfully performed basic initial verification and pairing.</b>\n\n</string>
+
+    <string name="hardware_enforced"><b>Hardware verified information:</b>\n\n</string>
+    <string name="identity">Pairing identity (hash of pinned hardware-backed key): %s\n</string>
+    <string name="security_level">Pinned security level: %s\n</string>
+    <string name="security_level_tee">Standard — Trusted Execution Environment (TEE)</string>
+    <string name="security_level_tee_attest_key">Standard — Trusted Execution Environment (TEE) with pairing specific attest key</string>
+    <string name="security_level_strongbox">Standard — StrongBox Hardware Security Module (HSM)</string>
+    <string name="security_level_strongbox_attest_key">High — StrongBox Hardware Security Module (HSM) with pairing specific attest key</string>
+    <string name="device">Pinned device: %s\n</string>
+    <string name="os">Pinned OS: %s (unmodified official release)\n</string>
+    <string name="os_version">Pinned OS version: %s\n</string>
+    <string name="os_patch_level">Pinned OS patch level: %s\n</string>
+    <string name="vendor_patch_level">Pinned vendor patch level: %s\n</string>
+    <string name="boot_patch_level">Pinned boot patch level: %s\n</string>
+    <string name="verified_boot_key_hash">Pinned verified boot key hash: %s\n</string>
+    <string name="verified_boot_hash">Verified boot hash: %s\n</string>
+
+    <string name="os_enforced">\n<b>Information provided by the verified OS:</b>\n\n</string>
+    <string name="auditor_app_version">Pinned Auditor app version: %d\n</string>
+    <string name="auditor_app_variant">Pinned Auditor app variant: %s\n</string>
+    <string name="auditor_app_variant_release">Release build signed by GrapheneOS</string>
+    <string name="auditor_app_variant_play">Release build signed by Play Store</string>
+    <string name="auditor_app_variant_debug">Debug build signed by GrapheneOS</string>
+    <string name="user_profile_secure">User profile secure: %s\n</string>
+    <string name="enrolled_biometrics">Enrolled biometrics: %s\n</string>
+    <string name="accessibility">Accessibility service(s) enabled: %s\n</string>
+    <string name="device_admin">Device administrator(s) enabled: %s\n</string>
+    <string name="device_admin_system">yes, but only system apps</string>
+    <string name="device_admin_non_system">yes, with non-system apps</string>
+    <string name="adb_enabled">Android Debug Bridge enabled: %s\n</string>
+    <string name="add_users_when_locked">Add users from lock screen: %s\n</string>
+    <string name="oem_unlock_allowed">OEM unlocking allowed: %s\n</string>
+    <string name="system_user">Main user account: %s\n</string>
+    <string name="auto_reboot_timeout">Auto reboot timeout: %s\n</string>
+    <string name="auto_reboot_off">Off</string>
+    <string name="auto_reboot_seconds_plural_value">%d seconds</string>
+    <string name="auto_reboot_minutes_plural_value">%d minutes</string>
+    <string name="auto_reboot_hours_plural_value">%d hours</string>
+    <string name="auto_reboot_one_second">1 second</string>
+    <string name="auto_reboot_one_minute">1 minute</string>
+    <string name="auto_reboot_one_hour">1 hour</string>
+
+    <string name="usbc_port_security_mode">USB-C port security mode: %s\n</string>
+    <string name="usbc_port_and_pogo_pins_security_mode">USB-C port and pogo pins security mode: %s\n</string>
+
+    <string name="usbc_port_security_mode_off">Off</string>
+    <string name="usbc_port_and_pogo_pins_security_mode_off">USB-C port off, pogo pins used only for charging</string>
+    <string name="usbc_port_security_mode_charging_only">Charging-only</string>
+    <string name="usbc_port_security_mode_charging_only_when_locked">Charging-only when locked</string>
+    <string name="usbc_port_security_mode_charging_only_when_locked_afu">Charging-only when locked, except before first unlock</string>
+    <string name="usbc_port_security_mode_on">On</string>
+
+    <string name="user_count">User count: %s\n</string>
+
+    <string name="invalid_value">Invalid</string>
+
+    <string name="history">\n<b>Attestation history:</b>\n\n</string>
+    <string name="first_verified">First verified: %s\n</string>
+    <string name="last_verified">Last verified: %s\n</string>
+
+    <string name="no">no</string>
+    <string name="yes">yes</string>
+
+    <string name="device_pixel_6">Google Pixel 6</string>
+    <string name="device_pixel_6_pro">Google Pixel 6 Pro</string>
+    <string name="device_pixel_6a">Google Pixel 6a</string>
+    <string name="device_pixel_7">Google Pixel 7</string>
+    <string name="device_pixel_7_pro">Google Pixel 7 Pro</string>
+    <string name="device_pixel_7a">Google Pixel 7a</string>
+    <string name="device_pixel_tablet">Google Pixel Tablet</string>
+    <string name="device_pixel_fold">Google Pixel Fold</string>
+    <string name="device_pixel_8">Google Pixel 8</string>
+    <string name="device_pixel_8_pro">Google Pixel 8 Pro</string>
+    <string name="device_pixel_8a">Google Pixel 8a</string>
+    <string name="device_pixel_9">Google Pixel 9</string>
+    <string name="device_pixel_9_pro">Google Pixel 9 Pro</string>
+    <string name="device_pixel_9_pro_xl">Google Pixel 9 Pro XL</string>
+    <string name="device_pixel_9_pro_fold">Google Pixel 9 Pro Fold</string>
+    <string name="device_pixel_9a">Google Pixel 9a</string>
+    <string name="device_pixel_10">Google Pixel 10</string>
+    <string name="device_pixel_10_pro">Google Pixel 10 Pro</string>
+    <string name="device_pixel_10_pro_xl">Google Pixel 10 Pro XL</string>
+    <string name="device_pixel_10_pro_fold">Google Pixel 10 Pro Fold</string>
+    <string name="device_pixel_10a">Google Pixel 10a</string>
+
+    <string name="os_stock">Stock</string>
+    <string name="os_graphene">GrapheneOS</string>
+</resources>

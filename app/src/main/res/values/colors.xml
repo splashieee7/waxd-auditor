@@ -1,0 +1,10 @@
+<resources>
+    <color name="green">#A5D6A7</color> <!-- Green 200 -->
+    <color name="orange">#FFCC80</color> <!-- Orange 200 -->
+    <color name="red">#EF9A9A</color> <!-- Red 200 -->
+
+    <color name="graphenePrimaryColor">#252525</color>
+    <color name="grapheneOnPrimaryColor">#E6E6E6</color>
+    <color name="grapheneSurfaceColor">#f8f8f8</color>
+    <color name="grapheneSurfaceContainerColor">#E6E6E6</color>
+</resources>
